@@ -1,4 +1,3 @@
-    this.setState({ showBetaAlert: false });
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
@@ -24,14 +23,16 @@ class Header extends Component {
     return (
       <header>
         <h1 className="logo">
-          <Link to={this.props.authenticated ? '/dashboard' : '/'}>inwest</Link>
+          <img src="https://image.ibb.co/gMa8T6/inwest_logo1.png" width="28px"/>
+
+          <Link to={this.props.authenticated ? '/dashboard' : '/'}> inwest</Link>
         </h1>
-        {/*{this.state.showBetaAlert &&
+        {this.state.showBetaAlert &&
           <div className="beta-alert">
-            <span>We're currently in beta!</span>
+            <span>we're currently in βeta!</span>
             <span className="close-alert" onClick={this.closeAlert}>×</span>
           </div>
-        }*/}
+        }
         <ul className="nav">
           <li className="nav-item">
             <Link to="/faq">FAQ</Link>
