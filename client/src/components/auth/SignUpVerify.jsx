@@ -25,7 +25,7 @@ class SignUpVerify extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="hdr">Activate your account.</h1>
+        <h1 className="hdr">You're all set!</h1>
         <h3 className="verify-text">Your Email has been added to our βeta wait list. As soon as we're ready, we'll Email you instructions for how to get started with Inwest.</h3>
 
       </div>
