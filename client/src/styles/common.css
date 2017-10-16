@@ -1,0 +1,104 @@
+.container {
+  margin-top: 8%;
+  text-align: center;
+}
+
+.container-home {
+  margin-top: 12%;
+  text-align: center;
+}
+
+.hdr {
+  color: white;
+  font-family: 'Avenir';
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.btns {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #1a92bf;
+  border: 2px solid white;
+  border-radius: 9999px;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin: 20px;
+  padding: 10px;
+  width: 150px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #1a92bf;
+}
+
+.input {
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  height: 25px;
+  margin-top: 30px;
+  padding: 10px;
+  outline: none;
+  width: 430px;
+}
+
+.get-started {
+  border: 2px solid white;
+  border-radius: 9999px;
+  background-color: #1a92bf;
+  color: white;
+  font-size: 15px;
+  height: 45px;
+  margin: 10px 15px 0 0;
+  padding: 10px;
+  width: 150px;
+}
+
+.get-started:hover {
+  background-color: white;
+  color: #1a92bf;
+}
+
+.get-started-with-coinbase {
+  border: 2px solid white;
+  border-radius: 9999px;
+  background-color: #1a92bf;
+  color: white;
+  font-size: 15px;
+  height: 45px;
+  margin: 10px 15px 0 0;
+  padding: 10px;
+  width: 200px;
+}
+
+.get-started-with-coinbase:hover {
+  background-color: white;
+  color: #1a92bf;
+}
+
+.footer-white {
+  background-color: #FAFAFC;
+  color: black;
+}
+
+.has-error {
+  background-color: #DA627D;
+}
+
+.has-error::-webkit-input-placeholder {
+  color: #1C1A19;
+}
+.has-error::-moz-placeholder {
+  color: #1C1A19;
+}
+.has-error:-ms-input-placeholder {
+  color: #1C1A19;
+}
+.has-error:-moz-placeholder {
+  color: #1C1A19;
+}

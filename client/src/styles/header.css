@@ -1,0 +1,53 @@
+.logo {
+  color: white;
+  display: inline-block;
+}
+
+.beta-alert {
+  background-color: rgba(103, 224, 163, 0.8);
+  border: 1px solid green;
+  border-radius: 3px;
+  display: inline-block;
+  margin-left: 32%;
+  padding: 10px 10px 10px 20px;
+  text-align: center;
+}
+
+.close-alert {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.nav {
+  color: white;
+  display: inline-block;
+  float: right;
+  margin-top: 22px;
+}
+
+.nav li {
+  display: inline;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid white;
+}
+
+.login {
+  background-color: white;
+  border-radius: 9999px;
+  padding: 4px 17px 4px 17px;
+}
+
+.login-link, .signout-link {
+  color: #1a92bf;
+}
+
+.login:hover {
+  border: none;
+}

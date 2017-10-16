@@ -1,0 +1,30 @@
+{
+  "name": "inwest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "7.10.1",
+    "npm": "4.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkrishnan8594/BlueCent.git"
+  },
+  "author": "Rowan Krishnan",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "scripts": {
+    "build": "concurrently \"cd client && npm run build\" \"cd server && npm run build\"",
+    "heroku-postbuild": "npm run build",
+    "install": "(cd client && npm i) && (cd server && npm i)",
+    "start": "concurrently \"cd client && npm start\" \"cd server && npm start\"",
+    "start:prod": "cd server && npm run start:prod"
+  },
+  "devDependencies": {
+    "react-dev-utils": "^4.1.0",
+    "react-scripts": "^1.0.14"
+  }
+}

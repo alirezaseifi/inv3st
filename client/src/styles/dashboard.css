@@ -1,0 +1,330 @@
+.dash-container {
+  margin: 5% auto 0 auto;
+  text-align: center;
+}
+
+/* Choose Bank Account */
+
+.bank-container {
+  margin: 6% auto 0 auto;
+  text-align: center;
+  width: 800px;
+}
+
+.solo-bank {
+  margin: 14% auto 0 auto;
+}
+
+.bank-hdr {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.btn-bank {
+  border-radius: 10px;
+}
+
+/* Setup Payment */
+
+.payment-container {
+  margin: 3% auto 0;
+  text-align: center;
+  width: 600px;
+}
+
+.solo-payment {
+  margin: 10% auto 0 auto;
+}
+
+.payment-hdr {
+  color: white;
+  font-family: 'Avenir';
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.input-cardholder {
+  width: 390px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.input-zipcode {
+  width: 80px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-payment {
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+  padding: 0;
+  width: 120px;
+}
+
+.payment-form iframe {
+  background-color: white;
+  border-radius: 3px;
+  color: black;
+  font-size: 14px;
+  font-family: 'Avenir';
+  height: 14px !important;
+  line-height: 1;
+  margin-top: 30px !important;
+  padding: 15px 10px !important;
+  outline: none;
+}
+
+.payment-form span * {
+  display: inline !important;
+}
+
+.card-number iframe {
+  min-width: 320px !important;
+  width: 320px !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.card-expiry iframe {
+  min-width: 90px !important;
+  width: 90px !important;
+  border-radius: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.card-cvc iframe {
+  min-width: 40px !important;
+  width: 40px !important;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Dash Header */
+
+.dash-hdr {
+  color: white;
+  font-weight: normal;
+  margin-top: 15%;
+}
+
+.dash-nav {
+  color: #FAFAFC;
+  margin-top: 5%;
+}
+
+.dash-item {
+  color: white;
+  cursor: pointer;
+  display: inline;
+  margin-right: 40px;
+  padding-bottom: 15px;
+}
+
+.dash-item:hover, .active-item {
+  border-bottom: 3px solid white;
+}
+
+.dash-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.dash-stats {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.dash-stat {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 3px solid #FAFAFC;
+  border-radius: 3px;
+  display: inline-block;
+  height: 200px;
+  margin-right: 100px;
+  padding: 0 20px 0 20px;
+  width: 250px;
+}
+
+.dash-stat:hover {
+  border-bottom: 3px solid #FCF5C7;
+}
+
+.dash-stat:last-of-type {
+  margin: 0;
+}
+
+.stat-content {
+  margin-top: 55px;
+}
+
+.stat-number {
+  color: white;
+  font-size: 40px;
+}
+
+.stat-name {
+  color: #FCF5C7;
+  margin-bottom: 20px;
+}
+
+.stat-mid {
+  height: 250px;
+  position: relative;
+  width: 300px;
+}
+
+.donate-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  border: 1px solid #FCF5C7;
+  bottom: -20px;
+  color: #FCF5C7;
+  font-size: 15px;
+  height: 40px;
+  position: relative;
+  width: 150px;
+}
+
+.donate-btn:hover {
+  background-color: #FCF5C7;
+  color: #1a92bf;
+}
+
+/* Transaction Table */
+
+.transaction-table {
+  background-color: #fafafc;
+  margin-top: 18px;
+  min-height: 250px;
+  padding: 30px 0;
+}
+
+.table-hdr {
+  display: inline-block;
+  margin: 0 auto 30px auto;
+  width: 1000px;
+}
+
+.table-title {
+  float: left;
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.table-toggle {
+  float: right;
+}
+
+.toggle-btn {
+  border: 1px solid #1a92bf;
+  background-color: #FAFAFC;
+  color: #1a92bf;
+  font-size: 15px;
+  height: 40px;
+  width: 150px;
+}
+
+.toggle-btn:hover {
+  background-color: #1a92bf;
+  color: #FAFAFC;
+}
+
+.left {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.right {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-left: none;
+}
+
+.toggle-selected {
+  background-color: #1a92bf;
+  color: #FAFAFC;
+}
+
+.ReactTable {
+  border: none;
+  margin: 0 auto;
+  text-align: left;
+  width: 1000px;
+}
+
+.ReactTable .rt-thead.-header {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.ReactTable .rt-thead .rt-th {
+  border-right: none;
+}
+
+.rt-td:not(:nth-child(2)) {
+  text-align: right;
+}
+
+.rt-td:first-child {
+  text-align: center;
+}
+
+.rt-th:nth-child(3), .rt-th:nth-child(4) {
+  text-align: right;
+}
+
+.rt-tr-group:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.rt-tbody {
+  font-size: 14px;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-asc, .ReactTable .rt-thead .rt-td.-sort-asc {
+  box-shadow: inset 0 3px 0 0 #1a92bf;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-desc, .ReactTable .rt-thead .rt-td.-sort-desc {
+  box-shadow: inset 0 -3px 0 0 #1a92bf;
+}
+
+.ReactTable .rt-tr-group {
+  height: 40px;
+  padding: 4px 0;
+}
+
+.ReactTable .rt-noData {
+  background: none;
+  color: black;
+  top: 250%;
+}
+
+/* Candidates & Settings */
+
+.candidates, .settings {
+  background-color: #FAFAFC;
+  height: 200px;
+  margin-top: 18px;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.coming-soon {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 5% auto;
+  padding: 15px;
+  text-align: middle;
+  width: 500px;
+}

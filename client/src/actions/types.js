@@ -1,0 +1,16 @@
+// auth
+export const SIGNUP_SUCCESS = 'SIGNUP_SUCCESS';
+export const SIGNUP_FAILURE = 'SIGNUP_FAILURE';
+export const AUTH_USER = 'AUTH_USER';
+export const LOGIN_FAILURE = 'LOGIN_FAILURE';
+export const VERIFY_ACCOUNT_FAILURE = 'VERIFY_ACCOUNT_FAILURE';
+export const UNAUTH_USER = 'UNAUTH_USER';
+
+// plaid
+export const GET_TRANSACTIONS = 'GET_TRANSACTIONS';
+export const ACCESS_TOKEN_SUCCESS = 'ACCESS_TOKEN_SUCCESS';
+export const ACCESS_TOKEN_ERROR = 'ACCESS_TOKEN_ERROR';
+
+// stripe
+export const STRIPE_SUCCESS = 'STRIPE_SUCCESS';
+export const STRIPE_ERROR = 'STRIPE_ERROR';

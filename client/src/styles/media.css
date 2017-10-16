@@ -1,0 +1,172 @@
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  header {
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .nav {
+    display: block;
+    float: none;
+    margin-top: 30px;
+  }
+
+  .faq-content {
+    height: 100%;
+    width: 90%;
+  }
+
+  .faq-hdr {
+    margin-top: 16%;
+  }
+
+  .container {
+    margin-top: 20%;
+  }
+
+  .signup-container {
+    margin-top: 10%;
+  }
+
+  .field-first {
+    display: block;
+    margin: 0;
+  }
+
+  .field-last {
+    display: block;
+  }
+
+  .field-first .signup-input, .field-last .signup-input, .signup-input {
+    width: 300px;
+  }
+
+  .hdr {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .container-home {
+    margin-top: 30%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .container-home {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (min-width: 555px) and (max-width: 775px) {
+  .bank-container {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .payment-container {
+    margin: 10% 0 auto;
+    width: 100%;
+  }
+
+  .payment-details {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .input-cardholder {
+    width: 45%;
+  }
+
+  .input-zipcode {
+    width: 20%;
+  }
+
+  .payment-hdr {
+    font-size: 25px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card-number iframe {
+    min-width: 70% !important;
+    width: 70% !important;
+    border-radius: 3px;
+  }
+
+  .card-expiry iframe {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 555px) {
+  .bank-container {
+    margin: 12% auto 0;
+    width: 80%;
+  }
+
+  .bank-hdr {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1135px) {
+  .dash-stats {
+    width: 1000px;
+  }
+
+  .dash-stat {
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1000px) {
+  .dash-stats {
+    width: 850px;
+  }
+
+  .dash-stat {
+    height: 160px;
+    margin-right: 50px;
+    width: 200px;
+  }
+
+  .stat-content {
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 849px) {
+  .dash-stats {
+    margin: 0 auto;
+    width: 320px;
+  }
+
+  .dash-stat {
+    display: block;
+    height: 200px;
+    margin: 50px auto 0 auto;
+    padding: 10px 20px 0 20px;
+    width: 250px;
+  }
+
+  .dash-stat:last-of-type {
+    margin: 50px auto 50px auto;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1000px) {
+  .ReactTable, .table-hdr {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 549px) {
+  .transaction-table, .dash-nav {
+    display: none;
+  }
+}

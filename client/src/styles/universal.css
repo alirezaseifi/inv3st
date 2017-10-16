@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  /*padding-bottom: 25px;*/
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1a92bf;
+  font-family: 'Avenir';
+  font-weight: 300;
+  overflow: auto;
+  height: 94%;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Avenir';
+  font-weight: 300;
+  outline: none;
+}
+
+footer {
+  bottom: 0;
+  color: lightblue;
+  height: 25px;
+  font-size: 11px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+header {
+  margin: 3% 5% 0 5%;
+}
