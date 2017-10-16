@@ -14,7 +14,7 @@ export default class FAQ extends Component {
               <p className="faq-answer">Inwest rounds up spare change from daily financial transactions and at the end of every month sends the sum to your Coinbase account. For example, spending $7.20 on a burrito will add $0.80 to your monthly total. Connect your bank account to Inwest after signing up and the app will immediately begin rounding up and tallying spare change as you make transactions.</p>
 
               <p className="faq-answer">
-              So based on crypto market sentimet, Inwest invests your spare-change into either BTC, ETH, LTC. Trust our judgment :)
+              Based on crypto market sentimet, Inwest invests your spare-change into either BTC, ETH, LTC. So trust our technical signals analysis :)
               </p>
 
             </li>
