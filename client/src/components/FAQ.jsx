@@ -21,7 +21,7 @@ export default class FAQ extends Component {
 
             <li className="faq-item">
               <p className="faq-question">How secure is Inwest?</p>
-              <p className="faq-answer">Your peace of mind is our highest priority. All of your data is protected with 128-bit encryption and never stored on our server.</p>
+              <p className="faq-answer">Your peace of mind is our highest priority. All of your data is protected with 128-bit encryption and no bank/coinbase credentials is ever stored on our server. We work with Plaid.com and take a token which we can use to pull transactions information.</p>
             </li>
 
 
