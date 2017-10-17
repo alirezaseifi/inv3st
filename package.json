@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/rkrishnan8594/BlueCent.git"
   },
-  "author": "Rowan Krishnan",
+  "author": "Alireza Seifi",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^3.5.0"

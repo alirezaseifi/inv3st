@@ -37,7 +37,7 @@ export default class FAQ extends Component {
 
 
             <li className="faq-item">
-              <p className="faq-question">Is there a discount for yearly service?</p>
+              <p className="faq-question">Coinbase Fees?</p>
               <p className="faq-answer">Please check out <a href="https://support.coinbase.com/customer/portal/articles/2109597-buy-sell-bank-transfer-fees" className="faq-link">coinbase</a> for more details.</p>
             </li>
 

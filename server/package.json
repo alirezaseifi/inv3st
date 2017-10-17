@@ -13,7 +13,7 @@
     "build": "babel . --ignore node_modules,build --out-dir build",
     "start:prod": "node build/app.js"
   },
-  "author": "Rowan Krishnan",
+  "author": "Alireza Seifi",
   "license": "ISC",
   "dependencies": {
     "babel-cli": "^6.24.1",
