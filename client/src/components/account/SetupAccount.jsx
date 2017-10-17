@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { browserHistory } from 'react-router';
-import { Elements } from 'react-stripe-elements';
 import * as actions from '../../actions';
 import SelectBank from './SelectBank';
 import SetupPayments from './SetupPayments';

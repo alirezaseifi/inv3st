@@ -14,14 +14,33 @@ export default class FAQ extends Component {
               <p className="faq-answer">Inwest rounds up spare change from daily financial transactions and at the end of every month sends the sum to your Coinbase account. For example, spending $7.20 on a burrito will add $0.80 to your monthly total. Connect your bank account to Inwest after signing up and the app will immediately begin rounding up and tallying spare change as you make transactions.</p>
 
               <p className="faq-answer">
-              Based on crypto market sentimet, Inwest invests your spare-change into either BTC, ETH, LTC. So trust our technical signals analysis :)
+              Based on crypto market sentimet, Inwest invests your spare-change into either BTC, ETH, LTC. So trust our technical signals analysis:)
               </p>
 
             </li>
+
             <li className="faq-item">
-              <p className="faq-question">Inwest Fees:</p>
-              <p className="faq-answer"> We take $1 in Ethereum or Bitcoin out of your Coinbase account every month as long as you are actively investing spare change through our system. You can choose which account we debit from under your settings. If you turn your investing off, we don't charge you a fee. This charge starts one month after you have connected both your Coinbase and banking card.</p>
+              <p className="faq-question">How secure is Inwest?</p>
+              <p className="faq-answer">Your peace of mind is our highest priority. All of your data is protected with 128-bit encryption and never stored on our server.</p>
             </li>
+
+
+            <li className="faq-item">
+              <p className="faq-question">Inwest Fees</p>
+              <p className="faq-answer">Your first month is free then we take $1 out of your Coinbase account every month. You can opt-out any time and no-questions-asked process.</p>
+            </li>
+
+            <li className="faq-item">
+              <p className="faq-question">Is there a discount for yearly service?</p>
+              <p className="faq-answer">Yes, we offer discounts on up-front long-term commitments. please reach out to us by email.</p>
+            </li>
+
+
+            <li className="faq-item">
+              <p className="faq-question">Is there a discount for yearly service?</p>
+              <p className="faq-answer">Please check out <a href="https://support.coinbase.com/customer/portal/articles/2109597-buy-sell-bank-transfer-fees" className="faq-link">coinbase</a> for more details.</p>
+            </li>
+
 
             <li className="faq-item">
               <p className="faq-question">Who works on Inwest?</p>
@@ -30,7 +49,6 @@ export default class FAQ extends Component {
             <li className="faq-item">
               <p className="faq-question">How do I contact Inwest?</p>
               <p className="faq-answer">The best way to get in touch is to send us a <a href="https://twitter.com/inwest_io" className="faq-link">tweet</a>. If you notice any bugs or inconsistencies on the site, please let us know! Also you can join our <a href="https://t.me/joinchat/BOPq6RG1v7iz040Otxt6BA" className="faq-link">Telegram channel</a></p>
-
 
             </li>
             <li className="faq-item">
