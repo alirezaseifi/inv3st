@@ -148,7 +148,7 @@ export const callback = (req, res, next) => {
   // let token = req.body.token;
   if (req.query.state){
 
-    var dataString = 'grant_type=authorization_code&code='+req.query.code+'&client_id=4b953dc5193c8d5842635395fda00c14fe227309b0962b9072f826382864599b&client_secret=9fe124e91c7b0c1569171688a2fcf0a664d16f6d71b279d6d1ac3fe393b9344a&redirect_uri=https://56de0d00.ngrok.io/callback';
+    var dataString = 'grant_type=authorization_code&code='+req.query.code+'&client_id=4b953dc5193c8d5842635395fda00c14fe227309b0962b9072f826382864599b&client_secret=9fe124e91c7b0c1569171688a2fcf0a664d16f6d71b279d6d1ac3fe393b9344a&redirect_uri=https://inwest.io/callback';
 
     var options = {
         url: 'https://api.coinbase.com/oauth/token',
