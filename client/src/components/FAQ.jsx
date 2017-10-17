@@ -29,7 +29,7 @@ export default class FAQ extends Component {
             </li>
             <li className="faq-item">
               <p className="faq-question">How do I contact Inwest?</p>
-              <p className="faq-answer">The best way to get in touch is to send us <a href="https://twitter.com/inwest_io" className="faq-link">tweet</a>. If you notice any bugs or inconsistencies on the site, please let us know! Also you can join our <a href="https://t.me/joinchat/BOPq6RG1v7iz040Otxt6BA className="faq-link">Telegram channel</a></p>
+              <p className="faq-answer">The best way to get in touch is to send us <a href="https://twitter.com/inwest_io" className="faq-link">tweet</a>. If you notice any bugs or inconsistencies on the site, please let us know! Also you can join our <a href="https://t.me/joinchat/BOPq6RG1v7iz040Otxt6BA" className="faq-link">Telegram channel</a></p>
 
 
             </li>
