@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 
   if (process.env.NODE_ENV === 'production' &&
     req.headers['x-forwarded-proto'] !== 'https') {
-    sslUrl = ['https://www.inwest.io', req.url].join('');
+    sslUrl = ['https://inwest.io', req.url].join('');
     return res.redirect(sslUrl);
   }
 
