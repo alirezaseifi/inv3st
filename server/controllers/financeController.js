@@ -10,7 +10,7 @@ var Coinbase = require('coinbase').Client;
 const PLAID_CLIENT_ID = envvar.string('PLAID_CLIENT_ID','59c978684e95b85652804e44');
 const PLAID_SECRET = envvar.string('PLAID_SECRET','a1515e257144e081740b8813b2ee59');
 const PLAID_PUBLIC_KEY = envvar.string('PLAID_PUBLIC_KEY','8a0543c35a121b228af0600fafa796');
-const PLAID_ENV = 'sandbox';
+const PLAID_ENV = 'development';
 
 let client = new plaid.Client(
   PLAID_CLIENT_ID,

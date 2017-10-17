@@ -12,11 +12,14 @@ import { chargeUsers } from './controllers/financeController';
 
 const app = express();
 
+process.env.NODE_ENV = 'production';
+
+
 // Force SSL
 app.use((req, res, next) => {
   let sslUrl;
 
-  if (process.env.NODE_ENV === 'production' &&
+  if (process.env.NODE_ENV === 'Xproduction' &&
     req.headers['x-forwarded-proto'] !== 'https') {
     sslUrl = ['https://inwest.io', req.url].join('');
     return res.redirect(sslUrl);
@@ -30,7 +33,7 @@ const staticFiles = express.static(path.join(__dirname, '../../client/build'));
 app.use(staticFiles);
 
 // MongoDB Config
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'Xproduction') {
   mongoose.connect(process.env.MONGODB_URI);
 } else {
   mongoose.connect(mongoConfig.db);

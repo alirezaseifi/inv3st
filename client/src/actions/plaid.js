@@ -18,7 +18,7 @@ export function getAccessToken(user) {
   return function(dispatch) {
     let handler = window.Plaid.create({
       clientName: 'Inwest',
-      env: 'sandbox',
+      env: 'development',
       key: '8a0543c35a121b228af0600fafa796',
       product: ['transactions'],
       onSuccess: (public_token, metadata) => {
