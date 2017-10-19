@@ -48,7 +48,7 @@ class Dashboard extends Component {
           : (this.state.dashState === 'candidates') ?
             <Candidates />
           :
-            <Settings />
+            <Settings coinbase={user.coinbase}/>
           }
         </div>
       );

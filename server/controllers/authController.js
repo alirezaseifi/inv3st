@@ -10,6 +10,7 @@ var Client = require('coinbase').Client;
 export const login = (req, res, next) => {
   const {
     id,
+    coinbase,
     first,
     last,
     email,
@@ -22,6 +23,7 @@ export const login = (req, res, next) => {
 
   res.json({
     id,
+    coinbase,
     token: tokenForUser(req.user),
     first,
     last,
