@@ -10,6 +10,7 @@ var Coinbase = require('coinbase').Client;
 const PLAID_CLIENT_ID = envvar.string('PLAID_CLIENT_ID','59c978684e95b85652804e44');
 const PLAID_SECRET = envvar.string('PLAID_SECRET','a1515e257144e081740b8813b2ee59');
 const PLAID_PUBLIC_KEY = envvar.string('PLAID_PUBLIC_KEY','8a0543c35a121b228af0600fafa796');
+//const PLAID_ENV = 'sandbox';
 const PLAID_ENV = 'development';
 
 let client = new plaid.Client(
@@ -84,25 +85,52 @@ export const chargeUsers = () => {
 
   User.find({}, (err, users) => {
     users.map((u) => {
-      if (u.customerId && u.access_token) {
+      if (u.customerId && u.access_token && u.coinbase) {
         client.getTransactions(u.access_token, u.lastContribDate, today, { count: 250, offset: 0 }, (err, result) => {
           if (err == null) {
             let transactions = filterTransactions(result.transactions);
+            let savedChangeRaw = calculateSavedChange(transactions);
             let savedChange = calculateSavedChange(transactions);
             savedChange = 100 * savedChange.toFixed(2);
-
+            console.log("REFRESHHH TOKEN",u.coinbase.auth.refresh_token);
             if (savedChange >= 50) {
-              var dataString = 'grant_type=authorization_code&code='+req.query.code+'&client_id=4b953dc5193c8d5842635395fda00c14fe227309b0962b9072f826382864599b&client_secret=9fe124e91c7b0c1569171688a2fcf0a664d16f6d71b279d6d1ac3fe393b9344a&redirect_uri=https://inwest.io/callback';
+              var dataString = 'grant_type=refresh_token&refresh_token='+u.coinbase.auth.refresh_token+'&client_id=4b953dc5193c8d5842635395fda00c14fe227309b0962b9072f826382864599b&client_secret=9fe124e91c7b0c1569171688a2fcf0a664d16f6d71b279d6d1ac3fe393b9344a&redirect_uri=https://inwest.io/callback';
 
-              var coinbase = new Coinbase({'accessToken': result.access_token, 'refreshToken': result.refreshToken});
-              coinbase.getAccount('2bbf394c-193b-5b2a-9155-3b4732659ede', function(err, account) {
-                account.buy({"amount": "10",
-                             "currency": "BTC",
-                             "payment_method": "83562370-3e5c-51db-87da-752af5ab9559"}, function(err, tx) {
-                  console.log(tx);
-                });
-              });
+              var options = {
+                  url: 'https://api.coinbase.com/oauth/token',
+                  method: 'POST',
+                  body: dataString
+              };
 
+              request(options, tokenCallback);
+
+              function tokenCallback(error, response, body) {
+                console.log(error,response.body,body);
+                if (!error && response.statusCode == 200) {
+                  var result = JSON.parse(response.body)
+                  if (result.access_token){
+                      var coinbase = new Coinbase({'accessToken': result.access_token, 'refreshToken': result.refreshToken});
+                      console.log(u.coinbase.accounts);
+                      var coinbaseObj = u.coinbase
+                      var account =  coinbaseObj.accounts.find(
+                         (it) => {
+                           return it.currency.code === 'BTC';
+                         }
+                      );
+
+                      console.log("BTC: " + JSON.stringify(account));
+
+                      coinbase.getAccount(account.id, function(err, account) {
+                        account.buy({"amount": savedChangeRaw,
+                                     "currency": "BTC",
+                                     "payment_method": coinbaseObj.paymentMethods[0].id}, function(err, tx) {
+                          console.log(tx);
+                        });
+                      });
+
+                  }
+                }
+              }
 
               // stripe.charges.create({
               //   amount: savedChange,
