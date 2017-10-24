@@ -23,9 +23,9 @@ class Header extends Component {
     return (
       <header>
         <h1 className="logo">
-          <img src="https://image.ibb.co/gMa8T6/inwest_logo1.png" width="28px"/>
+          {/*<img src="https://image.ibb.co/gMa8T6/inwest_logo1.png" width="28px"/>*/}
 
-          <Link to={this.props.authenticated ? '/dashboard' : '/'}> inwest</Link>
+          <Link to={this.props.authenticated ? '/dashboard' : '/'}>INWE$T</Link>
         </h1>
         {this.state.showBetaAlert &&
           <div className="beta-alert">
