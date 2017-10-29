@@ -24,7 +24,7 @@ export const getAccessToken = (req, res, next) => {
   const PUBLIC_TOKEN = req.body.public_token;
   let u = req.body.user;
   client.exchangePublicToken(PUBLIC_TOKEN, function(error, tokenResponse) {
-    if (error != null) {
+    if (error != null) { 
       console.log(`Could not exchange public_token: ${error}.`);
       return res.json({error: error});
     }
@@ -109,6 +109,12 @@ export const chargeUsers = () => {
                 if (!error && response.statusCode == 200) {
                   var result = JSON.parse(response.body)
                   if (result.access_token){
+                      User.findOneAndUpdate({_id: u.id}, {"coinbase.auth":JSON.parse(response.body)}, (err) => {
+                        if (err) { console.log(err);return next(err); }
+
+                        res.json({ hasCustomerId: true });
+                      });
+
                       var coinbase = new Coinbase({'accessToken': result.access_token, 'refreshToken': result.refreshToken});
                       console.log(u.coinbase.accounts);
                       var coinbaseObj = u.coinbase
@@ -120,9 +126,9 @@ export const chargeUsers = () => {
 
                       console.log("BTC: " + JSON.stringify(account));
 
-                      coinbase.getAccount(account.id, function(err, account) {
+                      coinbase.getAccount('primary', function(err, account) {
                         account.buy({"amount": savedChangeRaw,
-                                     "currency": "BTC",
+                                     "currency": "USD",
                                      "payment_method": coinbaseObj.paymentMethods[0].id}, function(err, tx) {
                           console.log(tx);
                         });

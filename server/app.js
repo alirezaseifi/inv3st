@@ -45,11 +45,11 @@ schedule.scheduleJob({hour: 0, minute: 0, dayOfWeek: 0}, function() {
 });
 
 // For testing purposes
-/*let rule = new schedule.RecurrenceRule();
-  rule.second = 0;
+let rule = new schedule.RecurrenceRule();
+  rule.second = 5;
   schedule.scheduleJob(rule, function() {
   chargeUsers();
-});*/
+});
 
 // App settings
 mongoose.set('debug', true);
