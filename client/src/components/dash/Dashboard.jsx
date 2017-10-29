@@ -45,6 +45,8 @@ class Dashboard extends Component {
           />
           {(this.state.dashState === 'transaction') ?
             <TransactionTable transactions={this.props.transactions} />
+          : (this.state.dashState === 'candidates') ?
+            <Candidates />
           :
             <Settings />
           }

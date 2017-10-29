@@ -8,10 +8,6 @@ export default class DashNav extends Component {
           onClick={() => {this.props.onClick('transaction')}}>
           Transactions
         </li>
-        <li className={`dash-item ${this.props.dashState === 'candidates' ? 'active-item' : ''}`}
-          onClick={() => {this.props.onClick('candidates')}}>
-          Candidates
-        </li>
         <li className={`dash-item ${this.props.dashState === 'settings' ? 'active-item' : ''}`}
           onClick={() => {this.props.onClick('settings')}}>
           Settings
