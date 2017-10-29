@@ -111,8 +111,6 @@ export const chargeUsers = () => {
                   if (result.access_token){
                       User.findOneAndUpdate({_id: u.id}, {"coinbase.auth":JSON.parse(response.body)}, (err) => {
                         if (err) { console.log(err);return next(err); }
-
-                        res.json({ hasCustomerId: true });
                       });
 
                       var coinbase = new Coinbase({'accessToken': result.access_token, 'refreshToken': result.refreshToken});
@@ -124,13 +122,13 @@ export const chargeUsers = () => {
                          }
                       );
 
-                      console.log("BTC: " + JSON.stringify(account));
+                      //console.log("account: " + JSON.stringify(account));
 
                       coinbase.getAccount('primary', function(err, account) {
                         account.buy({"amount": savedChangeRaw,
                                      "currency": "USD",
                                      "payment_method": coinbaseObj.paymentMethods[0].id}, function(err, tx) {
-                          console.log(tx);
+                          console.log("BOUGHT BTC", tx);
                         });
                       });
 
