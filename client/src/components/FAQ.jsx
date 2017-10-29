@@ -47,7 +47,7 @@ export default class FAQ extends Component {
 
             <li className="faq-item">
               <p className="faq-question">Is there a discount for yearly service?</p>
-              <p className="faq-answer">Yes, we offer discounts on up-front long-term commitments. please reach out to us by email.</p>
+              <p className="faq-answer">Yes, we offer discounts on up-front long-term commitments. please reach out to us by email <a href="mailto:support@inwest.io" className="faq-link">support@inwest.io</a>.</p>
             </li>
 
 
