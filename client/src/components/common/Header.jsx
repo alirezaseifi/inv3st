@@ -27,12 +27,12 @@ class Header extends Component {
 
           <Link to={this.props.authenticated ? '/dashboard' : '/'}>INWE$T</Link>
         </h1>
-        {this.state.showBetaAlert &&
+        {/*{this.state.showBetaAlert &&
           <div className="beta-alert">
             <span>we're currently in βeta!</span>
             <span className="close-alert" onClick={this.closeAlert}>×</span>
           </div>
-        }
+        }*/}
         <ul className="nav">
           <li className="nav-item">
             <Link to="/faq">FAQ</Link>
