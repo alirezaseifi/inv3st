@@ -9,6 +9,13 @@ export default class FAQ extends Component {
         </div>
         <div className="faq-content">
           <ul className="faq-items">
+
+            <li className="faq-item">
+              <p className="faq-question">What is Inwest?</p>
+              <p className="faq-answer">Inwest is a service which rounds every credit and debit card purchase you make up to the nearest dollar, then takes the total difference to automatically invest into a cryptocurrency of your choice
+              .</p>
+            </li>
+
             <li className="faq-item">
               <p className="faq-question" id="how">How does Inwest work?</p>
               <p className="faq-answer">After signing up for an Inwest account you will be asked to link it with a bank account of your choice and a Coinbase account.</p>
