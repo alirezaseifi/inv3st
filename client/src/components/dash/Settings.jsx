@@ -220,11 +220,11 @@ var Dropdown2 = React.createClass({
     return (
       <div className="settings">
         <div className="table-hdr">
-          <h3 className="coming-soon">Coming soon! We're working on it.</h3>
-			<Dropdown id='myDropdown' options={options} value='b' labelField='name' valueField='id' onChange={dropDownOnChange}/>
+          <h2 className="table-title">Coinbase</h2>
 
-			<Dropdown2 id='myDropdown2' options2={options2} value='b' labelField='name' valueField='id' onChange={dropDownOnChange}/>
+			<h3 className="coming-soon">Accounts : <Dropdown id='myDropdown' options={options}  labelField='name' valueField='id' onChange={dropDownOnChange}/><br/>
 
+			Payment Methods: <Dropdown2 id='myDropdown2' options2={options2} labelField='name' valueField='id' onChange={dropDownOnChange}/></h3>
         </div>
       </div>
     );
