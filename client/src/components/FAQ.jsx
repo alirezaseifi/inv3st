@@ -9,30 +9,52 @@ export default class FAQ extends Component {
         </div>
         <div className="faq-content">
           <ul className="faq-items">
+
+            <li className="faq-item">
+              <p className="faq-question">What is Inwest?</p>
+              <p className="faq-answer">Inwest is a service which rounds every credit and debit card purchase you make up to the nearest dollar, then takes the total difference to automatically invest into a cryptocurrency of your choice
+              .</p>
+            </li>
+
             <li className="faq-item">
               <p className="faq-question" id="how">How does Inwest work?</p>
-              <p className="faq-answer">Inwest rounds up spare change from daily financial transactions and at the end of every month sends the sum to your Coinbase account. For example, spending $7.20 on a burrito will add $0.80 to your monthly total. Connect your bank account to Inwest after signing up and the app will immediately begin rounding up and tallying spare change as you make transactions.</p>
+              <p className="faq-answer">After signing up for an Inwest account you will be asked to link it with a bank account of your choice and a Coinbase account.</p>
 
               <p className="faq-answer">
-              Based on crypto market sentimet, Inwest invests your spare-change into either BTC, ETH, LTC. So trust our technical signals analysis:)
+              Once both accounts are verified, Inwest will immediately begin rounding up and aggregating spare change from your daily financial transactions. At the end of every month, Inwest will send the these rounded-up funds to your Coinbase account. 
               </p>
+
+
+              <p className="faq-answer">
+              Based on overall crypto-market sentiment and Inwest’s own technical signal analysis, your monthly funds are invested for you into a mix of Bitcoin (BTC), Ethereum (ETH), and Litecoin (LTC). 
+              </p>
+
+
+              <p className="faq-answer">
+              It’s quick, it’s easy, and requires no effort or expertise once your account is set up.
+              </p>
+
+              <p className="faq-answer">
+              Example: Spending $4.45 on a latte today would add $0.55 to your monthly total. At the end of the month, the $0.55 from the latte transaction along with the rounded up funds from other transactions would be added up and transferred to your Coinbase account and subsequently invested in BTC, ETH, and LTC. 
+              </p>
+
 
             </li>
 
             <li className="faq-item">
               <p className="faq-question">How secure is Inwest?</p>
-              <p className="faq-answer">Your peace of mind is our highest priority. All of your data is protected with 128-bit encryption and no bank/coinbase credentials is ever stored on our server. We work with Plaid.com and take a token which we can use to pull transactions information.</p>
+              <p className="faq-answer">Inwest takes security very seriously. Your peace of mind is our highest priority. All of your data is protected with 128-bit encryption. We use tokens provided by Plaid.com to pull transaction information, so your banking / Coinbase credentials are never stored on our servers.</p>
             </li>
 
 
             <li className="faq-item">
               <p className="faq-question">Inwest Fees</p>
-              <p className="faq-answer">Your first month is free then we take $1 out of your Coinbase account every month. You can opt-out any time and no-questions-asked process.</p>
+              <p className="faq-answer">The first month is free! If you continue to use our product after the first month, Inwest will charge your Coinbase account $1 monthly. You may opt-out at any time, no questions asked.</p>
             </li>
 
             <li className="faq-item">
               <p className="faq-question">Is there a discount for yearly service?</p>
-              <p className="faq-answer">Yes, we offer discounts on up-front long-term commitments. please reach out to us by email.</p>
+              <p className="faq-answer">Yes, we offer discounts on up-front long-term commitments. please reach out to us by email <a href="mailto:support@inwest.io" className="faq-link">support@inwest.io</a>.</p>
             </li>
 
 
@@ -44,7 +66,7 @@ export default class FAQ extends Component {
 
             <li className="faq-item">
               <p className="faq-question">Who works on Inwest?</p>
-              <p className="faq-answer">Inwest is created and maintained by a team of individuals with the passion and purpose of advancing the practice of investment through crypto-currency.</p>
+              <p className="faq-answer">Inwest was created by a team of individuals passionate about crypto-currency to provide greater ease and access to crypto-currency investing. We think everyone should have a chance at participating in the exciting crypto-currency market, without having to do months of research or spend many thousands of dollars to do it (but you are welcome invest a lot, if you like).</p>
             </li>
             <li className="faq-item">
               <p className="faq-question">How do I contact Inwest?</p>

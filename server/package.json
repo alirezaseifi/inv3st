@@ -1,11 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Donate your spare change to progressive candidates and causes.",
+  "description": "Inwest is a service which rounds every credit and debit card purchase you make up to the nearest dollar, then takes the total difference to automatically invest into a cryptocurrency of your choice.",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rkrishnan8594/bluecent"
+    "url": "git+https://github.com/alirezaseifi/inv3st"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
