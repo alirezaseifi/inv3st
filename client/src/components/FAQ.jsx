@@ -74,7 +74,7 @@ export default class FAQ extends Component {
             </li>
             <li className="faq-item">
               <p className="faq-question">Can I help or get involved in any way?</p>
-              <p className="faq-answer">I’m always on the lookout for folks to help work on app development or design. Inwest is built with Node.js and React, so experience with those technologies is a plus.</p>
+              <p className="faq-answer">We're always on the lookout for folks to help work on iOS app development or design. Inwest is built with Node.js and React, so experience with those technologies is also a plus.</p>
             </li>
           </ul>
         </div>
