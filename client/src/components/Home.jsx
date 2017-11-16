@@ -8,7 +8,7 @@ export default class Home extends Component {
         <h1 className="hdr">every ¢ent counts</h1>
         <div className="btns">
           <Link to="/signup">
-            <button className="get-started">Request Early Access</button>
+            <button className="get-started">Sign Up</button>
           </Link>
           <a href="/faq#what">
             <button className="get-started">How It Works</button>

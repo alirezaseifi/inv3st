@@ -6,7 +6,7 @@ export default class DashStats extends Component {
       <div className="dash-stats">
         <div className="dash-stat">
           <div className="stat-content">
-            <p className="stat-name">Total contributed.</p>
+            <p className="stat-name">Total invested through Coinbase.</p>
             <p className="stat-number">${this.props.user.total.toFixed(2)}</p>
           </div>
         </div>
@@ -18,8 +18,8 @@ export default class DashStats extends Component {
         </div>
         <div className="dash-stat">
           <div className="stat-content">
-            <p className="stat-name">Number of contributions.</p>
-            <p className="stat-number">{this.props.user.numContribs}</p>
+            <p className="stat-name">Last investment Date</p>
+            <p className="stat-number">{this.props.user.lastContribDate}</p>
           </div>
         </div>
       </div>
