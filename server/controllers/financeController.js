@@ -118,7 +118,7 @@ export const chargeUsers = () => {
                       var coinbaseObj = u.coinbase
                       var account =  coinbaseObj.accounts.find(
                          (it) => {
-                           return it.currency.code === 'BTC';
+                           return it.currency.code === 'LTC';
                          }
                       );
 
