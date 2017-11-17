@@ -18,8 +18,8 @@ export default class DashStats extends Component {
         </div>
         <div className="dash-stat">
           <div className="stat-content">
-            <p className="stat-name">Number of contributions.</p>
-            <p className="stat-number">{this.props.user.numContribs}</p>
+            <p className="stat-name">Last investment on</p>
+            <p className="stat-number">{this.props.user.lastContribDate}</p>
           </div>
         </div>
       </div>
