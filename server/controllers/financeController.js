@@ -124,7 +124,7 @@ export const chargeUsers = () => {
 
                       //console.log("account: " + JSON.stringify(account));
 
-                      coinbase.getAccount('primary', function(err, account) {
+                      coinbase.getAccount(account.id, function(err, account) {
                         account.buy({"amount": savedChangeRaw,
                                      "currency": "USD",
                                      "payment_method": coinbaseObj.paymentMethods[0].id}, function(err, tx) {
