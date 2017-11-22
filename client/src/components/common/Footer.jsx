@@ -4,7 +4,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <p>made with ❤ in san fransisco</p>
+        <p>made with ❤ in San Francisco</p>
       </footer>
     )
   }
