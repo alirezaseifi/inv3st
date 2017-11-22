@@ -38,6 +38,15 @@ class Header extends Component {
             <Link to="/faq">FAQ</Link>
           </li>
           {this.props.authenticated ?
+          <li className="nav-item">
+          </li>
+          :
+            <li className="nav-item">
+              <Link to="/signup">Sign Up</Link>
+            </li>
+          }
+
+          {this.props.authenticated ?
             <li className="nav-item login" onClick={this.handleClick}>
               <Link to="#" className="signout-link">Sign Out</Link>
             </li>
@@ -46,6 +55,9 @@ class Header extends Component {
               <Link to="/login" className="login-link">Login</Link>
             </li>
           }
+
+
+
         </ul>
       </header>
     )
