@@ -63,7 +63,7 @@ export default class TransactionTable extends Component {
               Active
             </button>
             <button className={`toggle-btn right ${showActive ? '' : 'toggle-selected'}`} onClick={this.toggleTable}>
-              Contributed
+              Invested
             </button>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default class TransactionTable extends Component {
             showPageSizeOptions={false}
             showPageJump={false}
             showPagination={false}
-            noDataText="No contributed transactions to display."
+            noDataText="No invested transactions to display."
           />
         )}
       </div>
