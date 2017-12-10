@@ -20,7 +20,7 @@ export default class FAQ extends Component {
               <p className="faq-answer">After signing up for an Inwest account you will be asked to link it with a bank account of your choice and a Coinbase account.</p>
 
               <p className="faq-answer">
-              Once both accounts are verified, Inwest will immediately begin rounding up and aggregating spare change from your daily financial transactions. At the end of every month, Inwest will send the these rounded-up funds to your Coinbase account. 
+              Once both accounts are verified, Inwest will immediately begin rounding up and aggregating spare change from your daily financial transactions. At the end of every month, Inwest will send these rounded-up funds to your Coinbase account. 
               </p>
 
 
@@ -48,7 +48,12 @@ export default class FAQ extends Component {
 
             <li className="faq-item">
               <p className="faq-question">Inwest Fees</p>
-              <p className="faq-answer">The first month is free! If you continue to use our product after the first month, Inwest will charge your Coinbase account $1 monthly. You may opt-out at any time, no questions asked.</p>
+              <p className="faq-answer">The first month is free! If you continue to use our product after the first month, Inwest will charge your Coinbase account $1.49 monthly. You may opt-out at any time, no questions asked.</p>
+
+              <p className="faq-answer">
+              $0.99 for college students with a valid .edu address for up to a year from date of registration.
+              </p>
+
             </li>
 
             <li className="faq-item">
