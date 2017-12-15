@@ -6,6 +6,7 @@ export default class Home extends Component {
     return (
       <div className="container-home">
         <h1 className="hdr">every ¢ent counts</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dlXZy7CQtTk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>  
         <div className="btns">
           <Link to="/signup">
             <button className="get-started">Sign Up</button>
