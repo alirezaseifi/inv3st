@@ -60,7 +60,7 @@ export default class TransactionTable extends Component {
           <h2 className="table-title">Transactions</h2>
           <div className="table-toggle">
             <button className={`toggle-btn left ${showActive ? 'toggle-selected' : ''}`} onClick={this.toggleTable}>
-              Active
+              Not Invested
             </button>
             <button className={`toggle-btn right ${showActive ? '' : 'toggle-selected'}`} onClick={this.toggleTable}>
               Invested
