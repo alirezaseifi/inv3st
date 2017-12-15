@@ -75,7 +75,7 @@ export default class TransactionTable extends Component {
             showPageSizeOptions={false}
             showPageJump={false}
             showPagination={false}
-            noDataText="No active transactions to display. (Please use your credit card and come back for more transactions)"
+            noDataText="No active transactions to display. (Please use your credit card and come back later)"
           />
         ) : (
           <ReactTable
