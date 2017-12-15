@@ -3,23 +3,6 @@
   text-align: center;
 }
 
-.video-container {
-  text-align: center;
-  position:relative;
-  padding-bottom:56.25%;
-  padding-top:30px;
-  height:0;
-  overflow:hidden;
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-  position:absolute;
-  text-align: center;
-
-  top:0;
-  left:0;
-}
-
 .container-home {
   margin-top: 5%;
   text-align: center;
