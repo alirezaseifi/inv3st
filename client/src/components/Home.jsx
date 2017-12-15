@@ -5,7 +5,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="container-home">
-      <iframe width="336" height="189" src="https://www.youtube.com/embed/dlXZy7CQtTk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>  
+      <iframe width="392" height="220" src="https://www.youtube.com/embed/dlXZy7CQtTk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>  
 
         <h1 className="hdr">every ¢ent counts</h1>
         <div className="btns">
