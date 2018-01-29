@@ -39,7 +39,7 @@ class SignUp extends Component {
       <div className="signup-container">
         <h1 className="hdr">Sign Up</h1>
         <p></p>
-        <p>Inwest is currently in βeta. We're rolling out access over the next few weeks,<br/> so if you'd like to be one of the first to try, please register your interest below.</p>
+        <p>Inwest is currently in βeta.<br/> so if you'd like to be one of the first to try, please register your interest below.</p>
         <form onSubmit={handleSubmit(this.handleFormSubmit)}>
           <Field name="first" component={renderField} className="form-field field-first" type="text" placeholder="First" />
           <Field name="last" component={renderField} className="form-field field-last" type="text" placeholder="Last" />

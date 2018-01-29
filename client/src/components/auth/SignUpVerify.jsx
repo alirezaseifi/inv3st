@@ -26,7 +26,7 @@ class SignUpVerify extends Component {
     return (
       <div className="container">
         <h1 className="hdr">You're all set!</h1>
-        <h3 className="verify-text">Your Email has been added to our βeta wait list. As soon as we're ready, we'll Email you instructions for how to get started with Inwest.</h3>
+        <h3 className="verify-text">Please <a href="https://inwest.io/login">login</a> to add your bank account and coinbase account.</h3>
 
       </div>
     );
