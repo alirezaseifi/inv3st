@@ -47,7 +47,7 @@ export default class TransactionTable extends Component {
       width: 110
     }, {
       id: 'contribution',
-      Header: 'Contribution',
+      Header: 'Round off',
       accessor: (d) => {
         return `$${(Math.ceil(d.amount) - d.amount).toFixed(2)}`
       },
